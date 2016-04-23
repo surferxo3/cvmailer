@@ -11,7 +11,7 @@ The answer to all the above questions is the script that will automate all your 
 ## Installation
 
 Running the script is just the matter of minutes and not ~~seconds~~. Here are the steps listed:
-* Create the database on your live server and execute the script *models/companies_queries.sql*.
+* Create the database on your live server and execute the script *models/create_companies_table_script.sql*.
 * Place the script *logger.php* on your live server.
 * Configure the constants as shown below:
 ```
@@ -47,6 +47,7 @@ const CV_PATH = 'Someone_CV.pdf';
 ## Note
 * For testing the script with yahoo, gmail, or hotmail you will need to customize the script and configure it with the certificate file..
 * The script *verify.php* has the method that can be used to test whether the email id is valid or not. Incorporate the method in the core script if you want to.
+* The script *models/companies_queries.sql* contains set of queries that you can use to analyze your data such as Opened Emails, Not Opened Emails etc.
 
 
-This script was build with love and a little bit frustration. For more info about [ME] (https://pages.github.com/) visit my profile.
+This script was build with love and a little bit frustration. For more info about [ME] (https://pk.linkedin.com/in/mohammad-sharaf-ali-96a4038a) visit my profile.
