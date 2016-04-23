@@ -12,7 +12,7 @@ The answer to all the above questions is the script that will automate all your 
 
 Running the script is just the matter of minutes and not ~~seconds~~. Here are the steps listed:
 * Create the database on your live server and execute the script *models/create_companies_table_script.sql*.
-* Place the script *logger.php* on your live server.
+* Place the script *logger.php* on your live server and configure the database connection.
 * Configure the constants as shown below:
 ```
 //db constants
