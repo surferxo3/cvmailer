@@ -119,7 +119,7 @@ function checkRecord($email) { // returns true/false
 	$company = $db->$dbTable()
 				  ->where('Email = ?', $email);
 
-	return ($company->fetch() ? $company->fetch : false);
+	return ($company->fetch() ? $company->fetch() : false);
 }
 
 function insertRecord($data) { // returns newly inserted record
