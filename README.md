@@ -1,18 +1,18 @@
 ## Synopsis
 
-The hacker script to automate the process of sending cv's to employers when you are on the job hunt mission. The script comes up with the html conver letter and the pdf cv that is sent over with the email and is easily customizable. Furthermore, all the emails that you send using this script will be saved in the database for your future reference. In addition, pixel tracking is also present in the script which gives answer to your question *Is the mail read by HR which I sent yesterday?*.
+The hacker script to automate the process of sending cv's to employers when you are on the job hunt mission. The script comes up with the html cover letter and the pdf cv that is sent over with the email and is easily customizable. Furthermore, all the emails that you send using this script will be saved in the database for your future reference. In addition, pixel tracking is also present in the script which gives answer to your question *Is the mail read by HR which I sent yesterday?*.
 
 ## Motivation
 
-This script was developed while I was job hunting. The problem I faced was that it was really a pain to compose mail each time you want to mail the CV. What if you want to send tons of CV? What if you want know that mail you sent was a total waste or the HR had the glimpse on it? What if you want the list of all the software houses you applied and show them to your parents or share with friends?
+This script was developed while I was job hunting. It was really a pain to compose mail (PDF CV attached with HTML cover letter) each time when applying for respective job role. What if you want to send tons of CV? What if you want know that mail you sent was a total waste or HR had the glimpse on it? What if you want the list of all the software houses you applied and show them to your parents or share in your friends circle?
 
-The answer to all the above questions is the script that will automate all your tasks and help you track all the steps you have take during your job hunt.
+The answer to all the above questions is this script that will automate all of your tasks and help you track all the necessary steps you have taken during your job hunt mission.
 
 ## Installation
 
-Running the script is just the matter of minutes and not ~~seconds~~. Here are the steps listed:
-* Create the database on your live server and execute the script *models/create_companies_table_script.sql*.
-* Place the script *logger.php* on your live server and configure the database connection.
+Running the script is just the matter of minutes and not ~~seconds~~. Here are the steps listed (in order):
+* Create the database on your LIVE server and execute the script *models/create_companies_table_script.sql*.
+* Place the script *logger.php* on your LIVE server and configure the database connection.
 * Configure the constants as shown below:
 ```
 //db constants
@@ -42,10 +42,10 @@ const CV_PATH = 'Someone_CV.pdf';
 ```
 
 * Replace *Someone_CV.pdf* with your original CV, *templates/images/my_thumb.jpg* with your image, and modify the cover letter *templates/cover_letter.html* if you want to.
-* Now you are good and ready to test your script on your localhost.
+* Now you are good to go and test the script on your localhost.
 
 ## Note
-* For testing the script with yahoo, gmail, or hotmail you will need to customize the script and configure it with the certificate file..
+* For testing the script with yahoo, gmail, or hotmail you will need to customize the script and configure it with the certificate file.
 * The script *verify.php* has the method that can be used to test whether the email id is valid or not. Incorporate the method in the core script if you want to.
 * The script *models/companies_queries.sql* contains set of queries that you can use to analyze your data such as Opened Emails, Not Opened Emails etc.
 
