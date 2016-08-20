@@ -51,4 +51,4 @@ const CV_PATH = 'Someone_CV.pdf';
 * To work with TLD's from website extracted from email id you can use [this](http://jecas.cz/tld-list/) comprehensive list for your purpose.
 * Last but not the least, the PHPMailer version used is 2.3 but if you wish to use the latest vesion than kindly use [Composer] (https://getcomposer.org).
 
-This script was build with love and a little bit frustration. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.
+This script was built with love and a little bit frustration. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.
