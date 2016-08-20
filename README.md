@@ -48,6 +48,7 @@ const CV_PATH = 'Someone_CV.pdf';
 * For testing the script with yahoo, gmail, or hotmail you will need to customize the script and configure it with the certificate file.
 * The script *verify.php* has the method that can be used to test whether the email id is valid or not. Incorporate the method in the core script if you want to.
 * The script *models/companies_queries.sql* contains set of queries that you can use to analyze your data such as Opened Emails, Not Opened Emails etc.
+* To work with TLD's from website extracted from email id you can use [this](http://jecas.cz/tld-list/) comprehensive list for your purpose.
+* Last but not the least, the PHPMailer version used is 2.3 but if you wish to use the latest vesion than kindly use [Composer] (https://getcomposer.org).
 
-
-This script was build with love and a little bit frustration. For more info about [ME] (https://pk.linkedin.com/in/mohammad-sharaf-ali-96a4038a) visit my profile.
+This script was build with love and a little bit frustration. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.
