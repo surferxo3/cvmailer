@@ -24,24 +24,27 @@ const DB_TABLE = 'companies';
 const DB_DSN = 'mysql:dbname='. DB_NAME. ';host='. DB_HOST;
 
 //mailer constants
-const SMTP_HOST = 'smtp.mailgun.org'; // can be mailgun, mandrill etc
+const SMTP_HOST = 'your_smtp_host'; // can be smtp.sendgrid.net, smtp.mailgun.org etc
+const SMTP_PORT = 'your_smtp_port'; // can be 465, 587 etc
 const SMTP_USER = 'your_smtp_user';
 const SMTP_PASS = 'your_smtp_pass';
 const SMTP_FROM = 'someone@hotmail.com';
 const SMTP_FROM_NAME = 'Someone';
-const SMTP_DEFAULT_SUBJECT = 'Apply for Javascript Developer Position';
+const SMTP_DEFAULT_SUBJECT = 'Apply for Some Developer Position';
 
 //cover letter / cv constants
 const CL_PIXEL_HOLDER = '__PIXEL__';
 const CL_POSITION_HOLDER = '__POSITION__';
-const CL_DEFAULT_POSITION = 'Javascript Developer';
+const CL_DEFAULT_POSITION = 'Some Developer';
+const CL_DEFAULT_POSITION_STATUS = '0';
 const CL_PIXEL_TRACKING_PREFIX = 'http://www.yourdomain.com/mailer/logger.php?v='; // change dir path accordingly
-const CL_PATH = 'templates/cover_letter.html';
+const CL_PATH_UNKNOWN = 'templates/cover_letter_unknown.html';
+const CL_PATH_KNOWN = 'templates/cover_letter_known.html';
 const CV_NAME = 'Someone_CV.pdf';
 const CV_PATH = 'Someone_CV.pdf';
 ```
 
-* Replace *Someone_CV.pdf* with your original CV, *templates/images/my_thumb.jpg* with your image, and modify the cover letter *templates/cover_letter.html* if you want to.
+* Replace *Someone_CV.pdf* with your original CV, *templates/images/my_thumb.jpg* with your image, and modify the cover letter(s) *templates/cover_letter_known.html* and *templates/cover_letter_unknown.html* if you want to.
 * Now you are good to go and test the script on your localhost.
 
 ## Note
@@ -49,6 +52,6 @@ const CV_PATH = 'Someone_CV.pdf';
 * The script *verify.php* has the method that can be used to test whether the email id is valid or not. Incorporate the method in the core script if you want to.
 * The script *models/companies_queries.sql* contains set of queries that you can use to analyze your data such as Opened Emails, Not Opened Emails etc.
 * To work with TLD's from website extracted from email id you can use [this](http://jecas.cz/tld-list/) comprehensive list for your purpose.
-* Last but not the least, the PHPMailer version used is 2.3 but if you wish to use the latest vesion than kindly use [Composer] (https://getcomposer.org).
+* Last but not the least, the PHPMailer version used is 2.3 but if you wish to use the latest vesion than kindly use [Composer](https://getcomposer.org).
 
-This script was built with love and a little bit frustration. For more info about [ME] (http://bit.ly/msharaf-linkedin) visit my profile.
+This script was built with love and a little bit frustration. For more info about [ME](http://bit.ly/msharaf-linkedin) visit my profile.

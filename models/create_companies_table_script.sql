@@ -20,6 +20,9 @@ CREATE TABLE `companies` (
   `IsOpened` char(1) DEFAULT '0' COMMENT '0 => Mail Not Viewed, 1 => Mail Viewed',
   `IsOpenedDT` datetime DEFAULT NULL COMMENT 'Mailed Viewd DateTime',
   `IsActive` char(1) DEFAULT '1' COMMENT '0 => Company Profile Not Active, 1 => Company Profile Active',
+  `SubAppliedFor` varchar(300) DEFAULT NULL COMMENT 'Corresponds to the email subject',
+  `PosAppliedFor` varchar(300) DEFAULT NULL COMMENT 'Corresponds to the job role in cover letter',
+  `IsPosKnown` char(1) DEFAULT '0' COMMENT '0 => Apply for random position, 1 => Apply for known position',
   `CreatedDT` datetime DEFAULT NULL,
   `ModifiedDT` datetime DEFAULT NULL,
   PRIMARY KEY (`ID`)

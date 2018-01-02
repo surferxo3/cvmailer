@@ -2,7 +2,7 @@
 
 /*#############################
 * Developer: Mohammad Sharaf Ali
-* Description: PHP script to track email open and log in db
+* Description: Script to track pixel and log in db
 * Date: 23-04-2016
 */#############################
 
@@ -10,7 +10,7 @@
 ini_set('max_execution_time', 0);
 ini_set('memory_limit', '3G');
 
-date_default_timezone_set('Asia/Dubai');
+date_default_timezone_set('Asia/Karachi');
 
 ##################### CONSTANTS #####################
 //db constants
@@ -42,7 +42,7 @@ $db = new NotORM($pdo, $structure);
 $logData = isset($_GET['v']) ? $_GET['v'] : '';
 list($email, $timestamp) = explode('::', base64_decode($logData)); // datetime for unique url. can use other random generators too...  
 
-$db->$dbTable
+$db->{DB_TABLE}()
    ->where('Email = ?', $email)
    ->where('IsOpened = ?', '0')
    ->where('IsActive = ?', '1')

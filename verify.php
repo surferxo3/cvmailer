@@ -2,7 +2,7 @@
 
 /*#############################
 * Developer: Mohammad Sharaf Ali
-* Description: PHP script to verify email address
+* Description: Script to verify email address
 * Date: 23-04-2016
 */#############################
 
